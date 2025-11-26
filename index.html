@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niebla - Coffee House</title>
+    <link rel="icon" type="image/png" href="5716569.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="fixed-top">
+        <div class="top-header">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+                <div class="logo-section d-flex align-items-center gap-3">
+                    <a href="index.html">
+ <img src="https://scontent.fcbb2-2.fna.fbcdn.net/v/t1.15752-9/581114738_1093531689523708_3873710179127169374_n.png?_nc_cat=103&ccb=1-7&_nc_sid=9f807c&_nc_ohc=oAaBK_iMRxEQ7kNvwEk7yRC&_nc_oc=AdnOzbfsFPujAOVmPGwD2NZKfDIppjcw93_8gfJDjEYfuFZskbKFxkYS1qxqqetbQEw&_nc_zt=23&_nc_ht=scontent.fcbb2-2.fna&oh=03_Q7cD3wFGI-wNPZNBPvGVmO9DfmC41kx0A1SLT3mdL3Z0ie82nw&oe=693B0392" alt="Logo" class="img-fluid rounded-circle" style="max-width:100px;">
+                    </a>
+                   
+                  
+                </div>
+                <div class="header-icons d-flex gap-3">
+                    <a href="tienda.html" class="icon-btn">
+                        <img src="https://scontent.fcbb2-1.fna.fbcdn.net/v/t1.15752-9/588800221_1537377910713460_8027892446377947894_n.png?_nc_cat=100&ccb=1-7&_nc_sid=9f807c&_nc_ohc=QJdt-Drv680Q7kNvwHm1Amb&_nc_oc=AdnRHcJJOOm-7O9OGacpC4ergaBTn8zKgl0uAMQLJBYloDv9XM4uKOlym1kYBYt_hKw&_nc_zt=23&_nc_ht=scontent.fcbb2-1.fna&oh=03_Q7cD3wHX7v-jhLQLPKzyqWfjPlEazt5BAtFShbC-lIuJCK-QBQ&oe=694D6DE0" alt="Carrito" img-fluid rounded-circle style="max-width:40px;">
+                    </a>
+                    <a href="login.html" class="icon-btn">
+                        <img src="https://scontent.fcbb2-2.fna.fbcdn.net/v/t1.15752-9/588328192_831303379601201_68882733088763774_n.png?_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_ohc=4-NRWrQnQoMQ7kNvwFmaHXG&_nc_oc=Adk8bYHoTXLt9oNMDGc1KlayIYiWukXVGDardExeKemr-djQO1YMbdLgBTlnjassXJk&_nc_zt=23&_nc_ht=scontent.fcbb2-2.fna&oh=03_Q7cD3wE7CkAw-XtsdLG2elc8bP5xU-sADZH4IRM3ZjwCRoNHzA&oe=694D4F64" alt="Carrito" img-fluid rounded-circle style="max-width:40px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg main-nav ">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav justify-content-center">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="recetas.html">Recetas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="academias.html">Academias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="accesorios.html">Accesorios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="souvenirs.html">Souvenirs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tienda.html">Tienda</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Carousel Hero -->
+    <main style="margin-top: 180px;">
+        <div id="heroCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="hero-slide" style="background: linear-gradient(rgba(0, 0, 0 , 0.4), rgba(0,0,0,0.4)), url('https://cafemandrake.cl/cdn/shop/files/IMG-8302_bf2fb2cf-42de-4bbf-9b02-1674e1c30385.jpg?crop=center&height=1200&v=1728838877&width=1200') center/cover;">
+                        <div class="carousel-caption">
+                            <h2>UN SABOR EN PELIGRO DE EXTINCIÓN</h2>
+                            <h3>CAFÉ BOLIVIANO</h3>
+                            <p class="subtitle">EL ARTE DEL CAFÉ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="hero-slide" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://static.wixstatic.com/media/bda097_a949a950831c4859b67e6e773df82c86~mv2.jpg/v1/fill/w_640,h_726,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/bda097_a949a950831c4859b67e6e773df82c86~mv2.jpg') center/cover;">
+                        <div class="carousel-caption">
+                            <h2>DESCUBRE NUESTROS GRANOS PREMIUM</h2>
+                            <h3>CAFÉ DE ALTURA</h3>
+                            <p class="subtitle">CALIDAD EXCEPCIONAL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="hero-slide" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://cdn.shopify.com/s/files/1/0022/1393/7252/articles/Discover_How_Turkish_Coffee_Is_Different_From_Regular_Coffee.jpg?v=1703755505') center/cover;">
+                        <div class="carousel-caption">
+                            <h2>EXPERIENCIA ÚNICA</h2>
+                            <h3>CAFÉ ARTESANAL</h3>
+                            <p class="subtitle">TRADICIÓN Y SABOR</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <div class="container">
+            <!-- Productos Destacados -->
+            <section class="mb-5">
+                <h2 class="text-center section-title mb-4">Productos destacados</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <div class="product-badge">Oferta</div>
+                            <img src="https://cafemandrake.cl/cdn/shop/files/IMG_8923.jpg?v=1728914044&width=1500" class="card-img-top" alt="Ensalada">
+                            <h3 class="product-title">Café en bolsitas</h3>
+                            <p class="product-description">Contiene 15 saquitos
+                            Café rico y sin complicaciones, instantáneo
+                            Chocolate amargo, caramelo y notas de fruta.
+                            </p>
+                            <div class="product-price">Bs 20</div>
+                            <button class="btn btn-add-cart w-100">Ver detalles</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <div class="product-badge">Oferta</div>
+                            <img src="https://amarket.com.bo/cdn/shop/files/7771808000068_1200x1200.jpg?v=1712343977" class="card-img-top" alt="Ensalada">
+                            <h3 class="product-title">A toda hora</h3>
+                            <p class="product-description">Café en grano
+                                        500 gr
+                                        <br>
+                                        Intenso, pesado, dulce.
+                            </p>
+                            <div class="product-price">Bs 50</div>
+                            <button class="btn btn-add-cart w-100">Ver detalles</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <div class="product-badge">Oferta</div>
+                             <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQIHZVHUFBFBvfwirnnRt7kWcvie8GGPhy2g__2kMbdHqPQ7DJz" class="card-img-top" alt="Quinua">
+                            <h3 class="product-title">Premiun Americano</h3>
+                            <p class="product-description">Café molido
+                                250 gr
+                                <br>
+                                Suave, sabor cítrico, caramelo</p>
+                            <div class="product-price">$16.99</div>
+                            <button class="btn btn-add-cart w-100">Ver detalles</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+<!-- Separador -->
+            <div class="separator mb-5">☕ ☕ ☕</div>
+     <!-- Souvenirs -->
+            <section class="mb-5">
+                <h2>Recetas de café</h2>
+                <div class="row g-6 ">
+                    <div class="col-md-6">
+                        
+                        <div class="niebla-card2">
+                            
+                           <img src="https://scontent.fcbb2-1.fna.fbcdn.net/v/t1.15752-9/581121470_2276446226204265_1151411699095010919_n.png?_nc_cat=105&ccb=1-7&_nc_sid=9f807c&_nc_ohc=8vRQubZL9i8Q7kNvwGnSYAz&_nc_oc=AdkG0ZJiNinmA_Ix8NkwRjmLZ61H3CwxNHTAVMin4FidYlfZtU_YAsQz0g8-D-lPo48&_nc_zt=23&_nc_ht=scontent.fcbb2-1.fna&oh=03_Q7cD3wGVIVGHvUOk1_a4CpL3csRHPG30q8dIBC5vftow_jhYag&oe=693C3AC6" alt="Cafetería" class="niebla-image2">
+                            <div class="souvenir-info">
+                                <h5>Café en bolsitas</h5>
+                                  <br>
+                                <p>Café de Especialidad sin la necesidad de cafetera, filtro o molinillo. Lo puedes llevar a cualquier parte! Solo necesitas água caliente.
+                                En la montaña, bosque y también en la playa , donde quieras!
+                                Solo sumergir la bolsita , agregar el agua caliente y esperar que se infusione por 4 minutos y a disfrutar.
+                                Una experiencia singular, que puedes llevar contigo donde vayas.</p>
+                                <a href="recetas.html" class="btn btn-outline-danger">Ver mas recetas</a>
+                              
+                                
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </section>
+
+            <!-- Separador -->
+            <div class="separator mb-5">☕ ☕ ☕</div>
+
+            <!-- Recomendaciones de Cafeterías -->
+            <section class="mb-5">
+                <h2 class="text-center section-title mb-4">Recomendaciones de Cafeterías de especialidad</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="cafe-card">
+                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1d/20/98/ef/terraza-techada.jpg?w=500&h=-1&s=1" alt="Cafetería" class="cafe-image">
+                            <div class="cafe-info">
+                                <h4>Typica Cafe Tostaduria - La Paz</h4>
+                                <p>Es una de las mejores cafeterías de especialidad en Bolivia. 
+                                    Trabajamos directamente con los productores de café y tostamos nuestro propio café. Nuestra comida es siempre fresca y natural.</p>
+                               
+                              <a href="#" class="btn btn-warning rounded-pill px-4 ">Como llegar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="cafe-card">
+                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/35/e9/6b/deck-con-vista-a-la-recoleta.jpg?w=900&h=500&s=1" alt="Cafetería" class="cafe-image">
+                            <div class="cafe-info">
+                                <h4>Hoy Hay Café - Cochabambar</h4>
+                                <p>
+                                Cafetería de especialidad, Repostería variada, Coctelería autor a base de cafe y Mercado de productos Artesanal. 
+                                Desayuno, Comidas, Cenas, Brunch, Abierto hasta tarde.
+                                </p>
+                               <a href="#" class="btn btn-warning rounded-pill px-4 ">Como llegar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="cafe-card">
+                            <img src="https://media-cdn.tripadvisor.com/media/photo-m/1280/19/df/a5/84/cafe-buena-vista.jpg" alt="Cafetería" class="cafe-image">
+                            <div class="cafe-info">
+                                <h4>Cafe Buena Vista - Santa Cruz</h4>
+                                <p>Coffee Lab & Store, sirve cafés bolivianos de especialidad, 
+                                    te invitamos a degustar cafés frescos de alta calidad, tenemos una micro tostadora, 
+                                    vendemos todos los cafés de nuestra producción.</p>
+                               <a href="#" class="btn btn-warning rounded-pill px-4 ">Como llegar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Separador -->
+            <div class="separator mb-5">☕ ☕ ☕</div>
+
+            <!-- Souvenirs -->
+            <section class="mb-5">
+                <h2 class="text-center section-title mb-4">Souvenirs</h2>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="souvenir-card">
+                           <img src="https://latiendadelcafe.co/cdn/shop/products/peligro-tag_1.png?v=1750437463&width=2048" alt="Cafetería" class="cafe-image">
+                            <div class="souvenir-info">
+                                <h4>Camiseta Peligro</h4>
+                                  <br>
+                                <p>Para los amantes del alto voltaje!</p>
+                                <p>Con ella podrás conectar tu look con lo mejor del café más fuerte de Bolivia, mientras mantienes un estilo brutal.
+                                     </p>
+                              
+                                <div class="price-tag">Bs 150</div>
+                                <a href="souvenirs.html" class="btn btn-warning ">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="souvenir-card">
+                            <img src="https://latiendadelcafe.co/cdn/shop/files/mug-madre-selva-oso.jpg?v=1750437290&width=2080" alt="Cafetería" class="cafe-image">
+                            <div class="souvenir-info">
+                                <h4>Vaso Mug Madre Naturaleza</h4>
+                                <br>
+                                <p>Descubre la magia de tu café </p>
+                                <p>Cada mug combina estilo y funcionalidad, brindándote un momento de conexión con la naturaleza y la cultura cafetera de Bolivia. </p>
+                                <div class="price-tag">Bs</div>
+                                <a href="souvenirs.html" class="btn btn-warning">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+<footer class="bg-light py-5" style="background-color:#C8A6C3 !important;">
+  <div class="container text-dark">
+    <div class="row align-items-start">
+      <!-- Logo -->
+      <div class="col-md-2 text-center mb-4 mb-md-0">
+        <a href="index.html">
+<img src="https://scontent.fcbb2-2.fna.fbcdn.net/v/t1.15752-9/582054116_1216836660273363_5610784292670256343_n.png?_nc_cat=110&ccb=1-7&_nc_sid=9f807c&_nc_ohc=dBOrPd-s3Q4Q7kNvwEstnjf&_nc_oc=Adn03oyGlWOz9Mo8fbQ4asur63zhpYylrzMoyBftNEyw4h6vvb-I4dShfKLre04PtSU&_nc_zt=23&_nc_ht=scontent.fcbb2-2.fna&oh=03_Q7cD3wFR6bPfWmwThmKJ30N5SmHgFrq9Lh2yUNz5dFx9zThdTA&oe=693B19C4" alt="Logo" class="img-fluid rounded-circle" style="max-width:100px;">
+        </a>
+        
+      </div>
+
+      <!-- Contactos -->
+      <div class="col-md-3 mb-4 mb-md-0">
+        <h6 class="fw-bold text-dark">Contactos</h6>
+        <p class="mb-1 text-dark">+591 78963254</p>
+        <p class="mb-1"><a href="mailto:cafenieblacb@outlook.com" class="text-dark text-decoration-none">cafenieblacb@outlook.com</a></p>
+        <p class="mb-0 text-dark">Zona América Este</p>
+      </div>
+
+      <!-- Productos -->
+      <div class="col-md-3 mb-4 mb-md-0">
+        <h6 class="fw-bold text-dark">Productos - Categorías</h6>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#" class="text-dark text-decoration-none">Café en sobre</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Café en grano</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Café molido</a></li>
+        </ul>
+      </div>
+
+      <!-- Redes sociales -->
+      <div class="col-md-4 text-center text-md-end">
+        <div class="d-flex justify-content-center justify-content-md-end mb-3">
+          <a href="#" class="btn btn-outline-dark rounded-circle me-2">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="btn btn-outline-dark rounded-circle me-2">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="btn btn-outline-dark rounded-circle">
+            <i class="fab fa-tiktok"></i>
+          </a>
+        </div>
+        <a href="#" class="btn btn-warning rounded-pill px-4">Escríbenos</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap y FontAwesome -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

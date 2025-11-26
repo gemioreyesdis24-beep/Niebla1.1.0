@@ -1,0 +1,892 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e1c5e4 0%, #eee2ed 100%);
+    color: #333;
+    overflow-x: hidden;
+     padding-top: 0 !important;
+  margin-top: 0 !important;
+ 
+}
+
+/* Header */
+.top-header {
+    background: #C4A0B8;
+    padding: 1.2rem 2rem;
+    height: 80px; /* o el valor actual que uses */
+  overflow: visible; /* permite que el logo se salga un poco */
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.logo-circle {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #8B7A8F 0%, #6D5B70 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+/* Solo aumenta visualmente el logo */
+.logo-section img {
+  width: 90px; /* tamaño base */
+  height: 90px;
+  object-fit: cover;
+  transform: scale(1.3); /* Aumenta visualmente sin cambiar el flujo */
+  transform-origin: center;
+}
+
+.logo-circle:hover {
+    transform: scale(1.05);
+}
+
+.logo-text {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.icon-btn {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.icon-btn:hover {
+    transform: translateY(-3px);
+    background: rgba(255,255,255,0.2);
+}
+
+.main-nav {
+    background: #DCCBB5;
+    padding: 0;
+}
+
+.main-nav .navbar-nav {
+    width: 100%;
+      margin-bottom: 0 !important;
+}
+
+.main-nav .nav-link {
+    color: #3E2B1C !important;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 1rem 1.5rem !important;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.main-nav .nav-link:hover {
+    background: rgba(255,255,255,0.15);
+}
+
+.main-nav .nav-link.active {
+    background: rgba(255,255,255,0.25);
+    font-weight: 600;
+}
+
+.main-nav .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: #fff;
+}
+
+/* Hero Carousel */
+.hero-slide {
+    height: 650px;
+    display: top;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.hero-slide2 {
+    height: 850px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.carousel-caption {
+   
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.carousel-caption h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.carousel-caption h3 {
+    font-size: 2rem;
+    color: #FFD700;
+    margin-bottom: 0.5rem;
+}
+
+.carousel-caption .subtitle {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+/* Section Title */
+.section-title {
+    color: #6D5B70;
+    font-weight: 600;
+}
+
+/* Product Cards */
+.product-card {
+    background: #DCCBB5;
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.product-card1 {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.product-card4 {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.product-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #C4A0B8;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(135deg, #e8edf2 0%, #d4dbe3 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.product-title {
+    font-size: 1.2rem;
+    color: #2c1810;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.product-description {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.product-price {
+    font-size: 1.3rem;
+    color: #8B7A8F;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.btn-add-cart {
+    background: linear-gradient(135deg, #c7a301 0%, #c7a301 100%);
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-add-cart:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(109, 91, 112, 0.4);
+    background: linear-gradient(135deg, #c7a301 0%, #c7a301 100%);
+    color: #fff;
+}
+
+/* Separator */
+.separator {
+    text-align: center;
+    font-size: 2rem;
+    color: #C4A0B8;
+    margin: 3rem 0;
+}
+
+/* Recipe Highlight */
+.recipe-highlight {
+    background: linear-gradient(135deg, #8B7A8F 0%, #6D5B70 100%);
+    color: white;
+    padding: 3rem;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.recipe-highlight h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.recipe-highlight p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+/* Cafe Cards */
+.cafe-card {
+    background: #E8C26A;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+/* Cafe Cards */
+.cafe-card2 {
+    background: #DCCBB5;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.cafe-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.cafe-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.cafe-image2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cafe-image3 {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+.cafe-image4 {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.academia-image  {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /*para llenar los espacios*/
+}
+
+.cafe-info {
+    padding: 1.5rem; /*crear un espacio interno, para separar el contenido con el borde*/   
+}
+
+.cafe-info h4 {
+    color: #6D5B70;
+    margin-bottom: 0.5rem;
+}
+
+.cafe-badge {
+    display: inline-block;
+    background: #C4A0B8;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
+
+/* Souvenir Cards */
+.souvenir-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}.souvenir-card1 {
+    background: #DCCBB5;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.souvenir-card2 {
+    background: #f7f7f7;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.souvenir-card3 {
+    background: #DCCBB5;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.card-academia{
+background: #f5f5f5;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: flex;
+    gap: 2rem; /*propiedad en CSS para añadir espacio entre los elementos de un contenedor flexbox o grid*/
+    align-items: center;
+
+}
+.souvenir-image {
+    font-size: 4rem;
+    flex-shrink: 0;
+}
+
+.souvenir-info h4 {
+    color: #6D5B70;
+    margin-bottom: 0.5rem;
+}
+
+.price-tag {
+    color: #8B7A8F;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+/* Recipe Cards Full */
+.recipe-card-full {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.recipe-image-full {
+    width: 100%;
+    height: 100%;
+    min-height: 250px;
+    background: linear-gradient(135deg, #e8edf2 0%, #d4dbe3 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+}
+
+/* Cart Items Bootstrap */
+.cart-item-bs {
+    transition: all 0.3s ease;
+}
+
+.cart-img-bs {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #e8edf2 0%, #d4dbe3 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    flex-shrink: 0;
+}
+
+.remove-btn {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qty-minus, .qty-plus {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qty-input {
+    border: none;
+    background: #f8f9fa;
+}
+
+.checkout-btn-bs {
+    background: linear-gradient(135deg, #C4A0B8 0%, #8B7A8F 100%);
+    border: none;
+    padding: 1rem;
+    font-weight: 600;
+}
+
+.checkout-btn-bs:hover {
+    background: linear-gradient(135deg, #8B7A8F 0%, #C4A0B8 100%);
+}
+
+/* Footer */
+footer a {
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    color: #C4A0B8 !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .top-header {
+        padding: 1rem;
+    }
+
+    .logo-circle {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+
+    .logo-text {
+        font-size: 1.5rem;
+    }
+
+    .icon-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    .main-nav .nav-link {
+        padding: 0.8rem 1rem !important;
+        font-size: 0.9rem;
+    }
+
+    .hero-slide {
+        height: 300px;
+    }
+
+    .carousel-caption h2 {
+        font-size: 1.5rem;
+    }
+
+    .carousel-caption h3 {
+        font-size: 1.2rem;
+    }
+
+    .carousel-caption .subtitle {
+        font-size: 0.9rem;
+    }
+
+    .product-image {
+        height: 180px;
+        font-size: 3rem;
+    }
+
+    .recipe-highlight {
+        padding: 2rem 1.5rem;
+    }
+
+    .souvenir-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cart-item-bs {
+        flex-wrap: wrap;
+    }
+
+    .cart-img-bs {
+        width: 60px;
+        height: 60px;
+        font-size: 2rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* --- Ajuste de imágenes de productos destacados --- */
+.product-card img {
+  width: 100%;
+  height: 100%;         /* Tamaño uniforme para todas */
+  object-fit: cover;     /* Mantiene proporciones sin deformar */
+  border-radius: 12px;   /* Igual que el estilo de las tarjetas */
+  margin-bottom: 1rem;   /* Espacio coherente con el resto */
+}
+.product-card1 img {
+  width: 100%;
+  height: 100%;         /* Tamaño uniforme para todas */
+  object-fit: cover;     /* Mantiene proporciones sin deformar */
+  border-radius: 12px;   /* Igual que el estilo de las tarjetas */
+  margin-bottom: 1rem;   /* Espacio coherente con el resto */
+}
+
+/* --- Elimina el espacio entre el menú y el carrusel --- */
+header,
+.top-header,
+.main-nav,
+.navbar {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+}
+
+body {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.carousel,
+.carousel-inner {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Si usas fixed-top, ajusta el contenido debajo del header */
+main {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+.niebla-card {
+ height: auto;
+ width: 1280px;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: flex;
+    gap: 5rem;
+    align-items: center
+}
+.niebla-card2 {
+    background-color: #F7F3EF99;
+ height: auto;
+ width: 1280px;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: flex;
+    gap: 5rem;
+    align-items: center
+}
+.niebla-image {
+    width: 250%;
+    height: 270px;
+    object-fit: cover;
+}
+.niebla-image2 {
+    width: 250%;
+    height: 320px;
+    object-fit: cover;
+}
+.image-cafe{
+     width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+.card-body1{
+    background-color: #DCCBB5;
+    
+}
+.card1{
+     height: auto;
+ width: auto;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: flex;
+    gap: 5rem;
+    align-items: center
+}
+.card2{
+        height: auto;
+ width: auto;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: flex;
+    gap: 5rem;
+    align-items: center
+}
+.carrito{
+ width: 250px;
+    height: 250px;
+    object-fit: cover;
+    padding: 2rem;
+}
+.carrito2{
+ width: 360px;
+    height: 360px;
+    object-fit: cover;
+    padding: 2rem;
+}
+.card-img-top1{
+    height: 550px;
+ width: auto;
+    
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    background-color: #DCCBB5;
+    
+}
+ .nav-tabs {
+            background: #B89CB4;
+            border: none;
+        }
+        .nav-tabs .nav-link {
+            border: none;
+            color: #fff;
+            background: transparent;
+            padding: 1rem 2rem;
+        }
+        .nav-tabs .nav-link.active {
+            background: #E8D5E8;
+            color: #333;
+        }
+        .nav-tabs .nav-link i {
+            font-size: 1.5rem;
+        }
+        .form-container {
+            background: #E8D5E8;
+            padding: 3rem;
+            min-height: calc(100vh - 120px);
+        }
+        .form-box {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .form-label {
+            font-size: 0.9rem;
+            color: #333;
+            margin-bottom: 0.3rem;
+        }
+        .form-control {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 0.6rem;
+            background: #fff;
+        }
+        .form-control:focus {
+            border-color: #C4A0B8;
+            box-shadow: 0 0 0 0.2rem rgba(196, 160, 184, 0.25);
+        }
+        .btn-register {
+            background: #D4AF37;
+            color: #fff;
+            border: none;
+            padding: 0.8rem;
+            width: 100%;
+            border-radius: 4px;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+        .btn-register:hover {
+            background: #B8941F;
+            color: #fff;
+        }
+        .page-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #333;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+         .form-container {
+            background: #E8D5E8;
+            padding: 3rem;
+            min-height: calc(100vh - 120px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .login-box {
+            background: #F7F3EF;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            max-width: 450px;
+            width: 100%;
+        }
+        .page-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #333;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        .form-label {
+            font-size: 0.9rem;
+            color: #333;
+            margin-bottom: 0.3rem;
+        }
+        .form-control {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 0.7rem;
+            background: #fff;
+        }
+        .form-control:focus {
+            border-color: #C4A0B8;
+            box-shadow: 0 0 0 0.2rem rgba(196, 160, 184, 0.25);
+        }
+        .password-toggle {
+            position: relative;
+        }
+        .password-toggle .toggle-icon {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: #6c757d;
+            background: #8B7A8F;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+        }
+        .btn-login {
+            background: #D4AF37;
+            color: #fff;
+            border: none;
+            padding: 0.8rem;
+            width: 100%;
+            border-radius: 4px;
+            font-weight: 600;
+            margin-top: 1.5rem;
+        }
+        .btn-login:hover {
+            background: #B8941F;
+            color: #fff;
+        }
+        .divider {
+            text-align: center;
+            margin: 1.5rem 0;
+            position: relative;
+        }
+        .divider::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: #ddd;
+        }
+        .divider span {
+            background: #fff;
+            padding: 0 1rem;
+            position: relative;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        .social-login {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .btn-social {
+            flex: 1;
+            padding: 0.7rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #fff;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .btn-social:hover {
+            background: #f8f9fa;
+        }
+        .btn-social img {
+            height: 20px;
+        }
+        .links {
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+        .links a {
+            color: #6c757d;
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: block;
+            margin: 0.5rem 0;
+        }
+        .links a:hover {
+            color: #C4A0B8;
+        }

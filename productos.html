@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Niebla Coffee House</title>
+    <link rel="icon" type="image/png" href="5716569.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="fixed-top">
+        <div class="top-header">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+                <div class="logo-section d-flex align-items-center gap-3">
+                     <a href="index.html">
+ <img src="https://scontent.fcbb2-2.fna.fbcdn.net/v/t1.15752-9/581114738_1093531689523708_3873710179127169374_n.png?_nc_cat=103&ccb=1-7&_nc_sid=9f807c&_nc_ohc=oAaBK_iMRxEQ7kNvwEk7yRC&_nc_oc=AdnOzbfsFPujAOVmPGwD2NZKfDIppjcw93_8gfJDjEYfuFZskbKFxkYS1qxqqetbQEw&_nc_zt=23&_nc_ht=scontent.fcbb2-2.fna&oh=03_Q7cD3wFGI-wNPZNBPvGVmO9DfmC41kx0A1SLT3mdL3Z0ie82nw&oe=693B0392" alt="Logo" class="img-fluid rounded-circle" style="max-width:100px;">
+                    </a>
+                </div>
+                <div class="header-icons d-flex gap-3">
+                  <a href="tienda.html" class="icon-btn">
+                        <img src="https://scontent.fcbb2-1.fna.fbcdn.net/v/t1.15752-9/588800221_1537377910713460_8027892446377947894_n.png?_nc_cat=100&ccb=1-7&_nc_sid=9f807c&_nc_ohc=QJdt-Drv680Q7kNvwHm1Amb&_nc_oc=AdnRHcJJOOm-7O9OGacpC4ergaBTn8zKgl0uAMQLJBYloDv9XM4uKOlym1kYBYt_hKw&_nc_zt=23&_nc_ht=scontent.fcbb2-1.fna&oh=03_Q7cD3wHX7v-jhLQLPKzyqWfjPlEazt5BAtFShbC-lIuJCK-QBQ&oe=694D6DE0" alt="Carrito" img-fluid rounded-circle style="max-width:40px;">
+                    </a>
+                    <a href="login.html" class="icon-btn">
+                        <img src="https://scontent.fcbb2-2.fna.fbcdn.net/v/t1.15752-9/588328192_831303379601201_68882733088763774_n.png?_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_ohc=4-NRWrQnQoMQ7kNvwFmaHXG&_nc_oc=Adk8bYHoTXLt9oNMDGc1KlayIYiWukXVGDardExeKemr-djQO1YMbdLgBTlnjassXJk&_nc_zt=23&_nc_ht=scontent.fcbb2-2.fna&oh=03_Q7cD3wE7CkAw-XtsdLG2elc8bP5xU-sADZH4IRM3ZjwCRoNHzA&oe=694D4F64" alt="Carrito" img-fluid rounded-circle style="max-width:40px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg main-nav">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav justify-content-center">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="productos.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="recetas.html">Recetas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="academias.html">Academias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="accesorios.html">Accesorios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="souvenirs.html">Souvenirs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tienda.html">Tienda</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+   <main class="container my-5" style="margin-top: 220px;"> 
+    <div class="text-center mb-5">
+        <h2 class="fw-bold">Nuestros Productos</h2>
+        <p class="text-muted">Explora nuestra selección de cafés y productos especiales</p>
+    </div>
+
+    <h2 class="fw-bold mb-4">Café en bolsitas</h2>
+    <div class="row g-4 mb-5">
+        <div class="col-md-4">
+            <div class="product-card1 text-center p-3 border rounded-4 shadow-sm">
+                <img src="https://cafemandrake.cl/cdn/shop/files/IMG_8923.jpg?v=1728914044&width=1500" class="card-img-top" alt="Café en bolsitas">
+                <h3 class="product-title mt-3">Café en bolsitas</h3>
+                <p class="product-description text-muted">Café de Especialidad sin la necesidad de cafetera, filtro o molinillo. Lo puedes llevar a cualquier parte! Solo necesitas água caliente. Contiene 15 saquitos de café.</p>
+                <div class="product-price fw-bold mb-3">Bs 20</div>
+                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal1">Comprar ahora</button>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="product-card1 text-center p-3 border rounded-4 shadow-sm">
+              <img src="https://koladocaffe.com/wp-content/uploads/2023/03/descafeinado-e1753892326594-300x300.jpg" class="card-img-top" alt="Café en bolsitas medium">
+                <h3 class="product-title mt-3">Café en bolsitas medium</h3>
+                <p class="product-description text-muted">Café de Especialidad sin la necesidad de cafetera, filtro o molinillo. Lo puedes llevar a cualquier parte! Solo necesitas água caliente. Contiene 30 saquitos de café.</p>
+                <div class="product-price fw-bold mb-3">Bs 40</div>
+                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal2">Comprar ahora</button>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="product-card1 text-center p-3 border rounded-4 shadow-sm">
+                <img src="https://unicentrobogota.com/wp-content/uploads/2022/06/3CAJA-MADERA.jpg" class="card-img-top" alt="Café en bolsitas premium">
+                <h3 class="product-title mt-3">Café en bolsitas premium</h3>
+                <p class="product-description text-muted">Café de Especialidad sin la necesidad de cafetera, filtro o molinillo. Lo puedes llevar a cualquier parte! Solo necesitas água caliente. Contiene 120 saquitos de café</p>
+                <div class="product-price fw-bold mb-3">Bs 145</div>
+                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal3">Comprar ahora</button>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="fw-bold mb-4">Café en grano</h2>
+    <div class="row g-4 mb-5">
+        <div class="col-md-4">
+            <div class="product-card text-center p-3 border rounded-4 shadow-sm">
+                 <img src="https://amarket.com.bo/cdn/shop/files/7771808000068_1200x1200.jpg?v=1712343977" class="card-img-top" alt="A toda hora">
+                <h3 class="product-title mt-3">A toda hora</h3>
+                <p class="product-description text-muted">Café en grano 500 gr. Intenso, pesado, dulce.</p>
+                <div class="product-price fw-bold mb-3">Bs 50</div>
+                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal4">Comprar ahora</button>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="product-card text-center p-3 border rounded-4 shadow-sm">
+                <img src="https://i5.walmartimages.cl/asr/2a867327-b6ef-42c2-9bfa-873da9bf9243.cee0989076f0923ca17313b2b154c9e6.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff" class="card-img-top" alt="Alto Niebla">
+                <h3 class="product-title mt-3">Café Alto Niebla</h3>
+                <p class="product-description text-muted">250 gr. Café aromático, limpio, suave, con notas de caramelo. 100% arábico</p>
+                <div class="product-price fw-bold mb-3">Bs 90</div>
+                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal5">Comprar ahora</button>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="product-card text-center p-3 border rounded-4 shadow-sm">
+                <img src="https://www.cafellanquihue.com/wp-content/uploads/2025/08/puntiagudoblack2.jpg" class="card-img-top" alt="Café Osorno">
+                <h3 class="product-title mt-3">Café Osorno</h3>
+                <p class="product-description text-muted">250 gr. Café aromático, limpio, suave, con notas de caramelo y terminación de frutos rojos. 100% Java</p>
+                <div class="product-price fw-bold mb-3">Bs 70</div>
+                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal6">Comprar ahora</button>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="product-card text-center p-3 border rounded-4 shadow-sm">
+                 <img src="https://eurovending.cl/cdn/shop/files/309030100032.jpg?v=1732643003&width=533" class="card-img-top" alt="Alma Niebla">
+                <h3 class="product-title mt-3">Café Alma Niebla</h3>
+                <p class="product-description text-muted">250 gr. Es el fruto del entusiasmo y dedicación con que hemos emprendido esta aventura extrema en la búsqueda de los más prestigiosos orígenes.</p>
+                <div class="product-price fw-bold mb-3">Bs 90</div>
+                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal7">Comprar ahora</button>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="product-card text-center p-3 border rounded-4 shadow-sm">
+                <img src="https://elmundodelcafe.com/cdn/shop/files/iWl1KCd04j_grande.png?v=1725557934" class="card-img-top" alt="Café Black">
+                <h3 class="product-title mt-3">Café Black</h3>
+                <p class="product-description text-muted">250 gr. Café muy aromático, dulce y frutosidad explosiva. Café de especialidad, 100% arábico.</p>
+                <div class="product-price fw-bold mb-3">Bs 120</div>
+                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal8">Comprar ahora</button>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="product-card text-center p-3 border rounded-4 shadow-sm">
+                <img src="https://elmundodelcafe.com/cdn/shop/files/Cpv2XRBYHb.jpg?v=1720821970&width=1780" class="card-img-top" alt="Café de la Casa">
+                <h3 class="product-title mt-3">Café de la Casa Blend</h3>
+                <p class="product-description text-muted">250 gr. Nuestro Blend de La Casa fue formulado con una mezcla de café un complemento de sabores ideal para espresso y moka italiana.</p>
+                <div class="product-price fw-bold mb-3">Bs 80</div>
+                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal9">Comprar ahora</button>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="fw-bold mb-4">Café Molido</h2>
+    <div class="row g-4 mb-5">
+        <div class="col-md-4">
+            <div class="product-card1 text-center p-3 border rounded-4 shadow-sm">
+                <img src="https://farmacorp.com/cdn/shop/files/07771808000013.jpg?v=1714441043&width=800" class="card-img-top" alt="Premium Americano">
+                <h3 class="product-title mt-3">Premium Americano</h3>
+                <p class="product-description text-muted">250 gr. Un café que cautiva con sus notas distintivas de caramelo, chocolate y el exótico matiz de frutas tropicales.</p>
+                <div class="product-price fw-bold mb-3">Bs 20</div>
+                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal10">Comprar ahora</button>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="product-card1 text-center p-3 border rounded-4 shadow-sm">
+              <img src="https://elmundodelcafe.com/cdn/shop/files/KAWAS-JavasPeaberry2.png?v=1739799791" class="card-img-top" alt="Kawas Java">
+                <h3 class="product-title mt-3">Kawas - Java</h3>
+                <p class="product-description text-muted">250 gr. Su perfil destaca por delicadas notas herbales de limón, que aportan una frescura cítrica sutil y vivaz.</p>
+                <div class="product-price fw-bold mb-3">Bs 80</div>
+                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal11">Comprar ahora</button>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="product-card1 text-center p-3 border rounded-4 shadow-sm">
+                <img src="https://i5.walmartimages.cl/asr/fa3cb716-1889-4f59-8560-0287beb64e36.d32efd1ad2b2b90a0695f26fe23962ef.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff" class="card-img-top" alt="Melitta Altura">
+                <h3 class="product-title mt-3">Melitta - Altura</h3>
+                <p class="product-description text-muted">250 gr. Hemos tomado esta mezcla equilibrada, filtrado suavemente la cafeína y tostado los granos para que pueda disfrutar de un café.</p>
+                <div class="product-price fw-bold mb-3">Bs 100</div>
+                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal12">Comprar ahora</button>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="product-card1 text-center p-3 border rounded-4 shadow-sm">
+                <img src="https://m.media-amazon.com/images/I/515sWf5bB7L._AC_UF894,1000_QL80_.jpg" class="card-img-top" alt="Café Illimani">
+                <h3 class="product-title mt-3">Café Illimani</h3>
+                <p class="product-description text-muted">250 gr. De fragancia dulce y terminaciones de panela. Café de especialidad, 100% arábico.</p>
+                <div class="product-price fw-bold mb-3">Bs 70</div>
+                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal13">Comprar ahora</button>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="product-card1 text-center p-3 border rounded-4 shadow-sm">
+              <img src="https://elmundodelcafe.com/cdn/shop/files/iWl1KCd04j_grande.png?v=1725557934" class="card-img-top" alt="Café Parabola">
+                <h3 class="product-title mt-3">Café Parabola</h3>
+                <p class="product-description text-muted">250 gr. Un café exótico, de mediana acidez, frutal, bien balanceado, limpio y uniforme.</p>
+                <div class="product-price fw-bold mb-3">Bs 40</div>
+                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal14">Comprar ahora</button>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="product-card1 text-center p-3 border rounded-4 shadow-sm">
+                <img src="https://cafealtura.cl/wp-content/uploads/2024/06/brasi-abaporu.jpg" class="card-img-top" alt="Café Andariego">
+                <h3 class="product-title mt-3">Café Andariego</h3>
+                <p class="product-description text-muted">250 gr. En taza, notarás una jugosa nota de durazno combinada con la dulzura delicada del melón, mientras que el caramelo le aporta profundidad y textura.</p>
+                <div class="product-price fw-bold mb-3">Bs 145</div>
+                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal15">Comprar ahora</button>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- TODOS LOS MODALES -->
+
+<!-- Modal 1: Café en bolsitas -->
+<div class="modal fade" id="modal1" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body p-4">
+        <button type="button" class="btn-close float-end" data-bs-dismiss="modal"></button>
+        <div class="row">
+          <div class="col-md-5">
+            <img src="https://cafemandrake.cl/cdn/shop/files/IMG_8923.jpg?v=1728914044&width=1500" class="img-fluid rounded" alt="Producto">
+            <div class="text-center mt-3">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <h3 class="fw-bold">Café en bolsitas</h3>
+            <h4 class="text-warning fw-bold my-3">Bs 20</h4>
+            <p class="text-muted">Contiene 15 saquitos de café</p>
+            <p>¡Toma café como tomas té! Pon la bolsita (filt) de Café Niebla dentro de la taza, agrega agua o leche caliente, mueve la bolsita de arriba hacia abajo y presiónala contra las paredes de la taza hasta llegar a tu gusto. Disfruta de un delicioso café 100% boliviano, tostado y molido. ¡Sin máquinas y en menos de tres minutos!</p>
+            
+            <div class="d-flex align-items-center gap-3 my-4">
+              <button class="btn btn-outline-dark btn-sm rounded-circle" onclick="decrementQty('qty1')">-</button>
+              <input type="number" id="qty1" value="0" class="form-control text-center" style="width: 60px;" readonly>
+              <button class="btn btn-outline-dark btn-sm rounded-circle" onclick="incrementQty('qty1')">+</button>
+            </div>
+            
+            <button class="btn btn-warning w-100 mb-2">Añadir al carrito</button>
+            <button class="btn btn-warning w-100" data-bs-dismiss="modal">Seguir comprando</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2: Café en bolsitas medium -->
+<div class="modal fade" id="modal2" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body p-4">
+        <button type="button" class="btn-close float-end" data-bs-dismiss="modal"></button>
+        <div class="row">
+          <div class="col-md-5">
+            <img src="https://koladocaffe.com/wp-content/uploads/2023/03/descafeinado-e1753892326594-300x300.jpg" class="img-fluid rounded" alt="Producto">
+            <div class="text-center mt-3">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <h3 class="fw-bold">Café en bolsitas medium</h3>
+            <h4 class="text-warning fw-bold my-3">Bs 40</h4>
+            <p class="text-muted">Contiene 30 saquitos de café</p>
+            <p>Café de Especialidad sin la necesidad de cafetera, filtro o molinillo. Lo puedes llevar a cualquier parte! Solo necesitas água caliente.</p>
+            
+            <div class="d-flex align-items-center gap-3 my-4">
+              <button class="btn btn-outline-dark btn-sm rounded-circle" onclick="decrementQty('qty2')">-</button>
+              <input type="number" id="qty2" value="0" class="form-control text-center" style="width: 60px;" readonly>
+              <button class="btn btn-outline-dark btn-sm rounded-circle" onclick="incrementQty('qty2')">+</button>
+            </div>
+            
+            <button class="btn btn-warning w-100 mb-2">Añadir al carrito</button>
+            <button class="btn btn-warning w-100" data-bs-dismiss="modal">Seguir comprando</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3: Café en bolsitas premium -->
+<div class="modal fade" id="modal3" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body p-4">
+        <button type="button" class="btn-close float-end" data-bs-dismiss="modal"></button>
+        <div class="row">
+          <div class="col-md-5">
+            <img src="https://unicentrobogota.com/wp-content/uploads/2022/06/3CAJA-MADERA.jpg" class="img-fluid rounded" alt="Producto">
+            <div class="text-center mt-3">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <h3 class="fw-bold">Café en bolsitas premium</h3>
+            <h4 class="text-warning fw-bold my-3">Bs 145</h4>
+            <p class="text-muted">Contiene 120 saquitos de café</p>
+            <p>Café de Especialidad sin la necesidad de cafetera, filtro o molinillo. Lo puedes llevar a cualquier parte! Solo necesitas água caliente. Presentación premium en caja de madera.</p>
+            
+            <div class="d-flex align-items-center gap-3 my-4">
+              <button class="btn btn-outline-dark btn-sm rounded-circle" onclick="decrementQty('qty3')">-</button>
+              <input type="number" id="qty3" value="0" class="form-control text-center" style="width: 60px;" readonly>
+              <button class="btn btn-outline-dark btn-sm rounded-circle" onclick="incrementQty('qty3')">+</button>
+            </div>
+            
+            <button class="btn btn-warning w-100 mb-2">Añadir al carrito</button>
+            <button class="btn btn-warning w-100" data-bs-dismiss="modal">Seguir comprando</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 4: A toda hora -->
+<div class="modal fade" id="modal4" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body p-4">
+        <button type="button" class="btn-close float-end" data-bs-dismiss="modal"></button>
+        <div class="row">
+          <div class="col-md-5">
+            <img src="https://amarket.com.bo/cdn/shop/files/7771808000068_1200x1200.jpg?v=1712343977" class="img-fluid rounded" alt="Producto">
+            <div class="text-center mt-3">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <h3 class="fw-bold">A toda hora</h3>
+            <h4 class="text-warning fw-bold my-3">Bs 50</h4>
+            <p class="text-muted">Café en grano - 500 gr</p>
+            <p>Intenso, pesado, dulce. Café en grano de alta calidad perfecto para moler en casa y disfrutar en cualquier momento del día.</p>
+            
+            <div class="d-flex align-items-center gap-3 my-4">
+              <button class="btn btn-outline-dark btn-sm rounded-circle" onclick="decrementQty('qty4')">-</button>
+              <input type="number" id="qty4" value="0" class="form-control text-center" style="width: 60px;" readonly>
+              <button class="btn btn-outline-dark btn-sm rounded-circle" onclick="incrementQty('qty4')">+</button>
+            </div>
+            
+            <button class="btn btn-warning w-100 mb-2">Añadir al carrito</button>
+            <button class="btn btn-warning w-100" data-bs-dismiss="modal">Seguir comprando</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 5: Café Alto Niebla -->
+<div class="modal fade" id="modal5" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body p-4">
+        <button type="button" class="btn-close float-end" data-bs-dismiss="modal"></button>
+        <div class="row">
+          <div class="col-md-5">
+            <img src="https://i5.walmartimages.cl/asr/2a867327-b6ef-42c2-9bfa-873da9bf9243.cee0989076f0923ca17313b2b154c9e6.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff" class="img-fluid rounded" alt="Producto">
+            <div class="text-center mt-3">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <h3 class="fw-bold">Café Alto Niebla</h3>
+            <h4 class="text-warning fw-bold my-3">Bs 90</h4>
+            <p class="text-muted">250 gr - 100% arábico</p>
+            <p>Café aromático, limpio, suave, con notas de caramelo. Un café de especialidad que deleitará tu paladar.</p>
+            
+            <div class="d-flex align-items-center gap-3 my-4">
+              <button class="btn btn-outline-dark btn-sm rounded-circle" onclick="decrementQty('qty5')">-</button>
+              <input type="number" id="qty5" value="0" class="form-control text-center" style="width: 60px;" readonly>
+              <button class="btn btn-outline-dark btn-sm rounded-circle" onclick="incrementQty('qty5')">+</button>
+            </div>
+            
+            <button class="btn btn-warning w-100 mb-2">Añadir al carrito</button>
+            <button class="btn btn-warning w-100" data-bs-dismiss="modal">Seguir comprando</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 6: Café Osorno -->
+<div class="modal fade" id="modal6" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body p-4">
+        <button type="button" class="btn-close float-end" data-bs-dismiss="modal"></button>
+        <div class="row">
+          <div class="col-md-5">
+            <img src="https://www.cafellanquihue.com/wp-content/uploads/2025/08/puntiagudoblack2.jpg" class="img-fluid rounded" alt="Producto">
+            <div class="text-center mt-3">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <h3 class="fw-bold">Café Osorno</h3>
+            <h4 class="text-warning fw-bold my-3">Bs 70</h4>
+            <p class="text-muted">250 gr - 100% Java</p>
+            <p>Café aromático, limpio, suave, con notas de caramelo y terminación de frutos rojos.</p>
+            
+            <div class="d-flex align-items-center gap-3 my-4">
+              <button class="btn btn-outline-dark btn-sm rounded-circle" onclick="decrementQty('qty6')">-</button>
+              <input type="number" id="qty6" value="0" class="form-control text-center" style="width: 60px;" readonly>
+              <button class="btn btn-outline-dark btn-sm rounded-circle" onclick="incrementQty('qty6')">+</button>
+            </div>
+            
+            <button class="btn btn-warning w-100 mb-2">Añadir al carrito</button>
+            <button class="btn btn-warning w-100" data-bs-dismiss="modal">Seguir comprando</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 7: Café Alma Niebla -->
+<div class="modal fade" id="modal7" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body p-4">
+        <button type="button" class="btn-close float-end" data-bs-dismiss="modal"></button>
+        <div class="row">
+          <div class="col-md-5">
+            <img src="https://eurovending.cl/cdn/shop/files/309030100032.jpg?v=1732643003&width=533" class="img-fluid rounded" alt="Producto">
+            <div class="text-center mt-3">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <h3 class="fw-bold">Café Alma Niebla</h3>
+            <h4 class="text-warning fw-bold my-3">Bs 90</h4>
+            <p class="text-muted">250 gr</p>
+            <p>Es el fruto del entusiasmo y dedicación con que hemos emprendido esta aventura extrema en la búsqueda de los más prestigiosos orígenes.</p>
+            
+            <div class="d-flex align-items-center gap-3 my-4">
+              <button class="btn btn-outline-dark btn-sm rounded-circle" onclick="decrementQty('qty7')">-</button>
+              <input type="number" id="qty7" value="0" class="form-control text-center" style="width: 60px;" readonly>
+              <button class="btn btn-outline-dark btn-sm rounded-circle" onclick="incrementQty('qty7')">+</button>
+            </div>
+            
+            <button class="btn btn-warning w-100 mb-2">Añadir al carrito</button>
+            <button class="btn btn-warning w-100" data-bs-dismiss="modal">Seguir comprando</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 8: Café Black -->
+<div class="modal fade" id="modal8" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body p-4">
+        <button type="button" class="btn-close float-end" data-bs-dismiss="modal"></button>
+        <div class="row">
+          <div class="col-md-5">
+            <img src="https://elmundodelcafe.com/cdn/shop/files/iWl1KCd04j_grande.png?v=1725557934" class="img-fluid rounded" alt="Producto">
+            <div class="text-center mt-3">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <h3 class="fw-bold">Café Black</h3>
+            <h4 class="text-warning fw-bold my-3">Bs 120</h4>
+            <p class="text-muted">250 gr - 100% arábico</p>
+            <p>Café muy aromático, dulce y frutosidad explosiva. Café de especialidad.</p>
+            
+            <div class="d-flex align-items-center gap-3 my-4">
+              <button class="btn btn-outline-dark btn-sm rounded-circle" onclick="decrementQty('qty8')">-</button>
+              <input type="number" id="qty8" value="0" class="form-control text-center" style="width: 60px;" readonly>
+              <button class="btn btn-outline-dark btn-sm rounded-circle" onclick="incrementQty('qty8')">+</button>
+            </div>
+            
+            <button class="btn btn-warning w-100 mb-2">Añadir al carrito</button>
+            <button class="btn btn-warning w-100" data-bs-dismiss="modal">Seguir comprando</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 9: Café de la Casa Blend -->
+<div class="modal fade" id="modal9" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body p-4">
+        <button type="button" class="btn-close float-end" data-bs-dismiss="modal"></button>
+        <div class="row">
+          <div class="col-md-5">
+            <img src="https://elmundodelcafe.com/cdn/shop/files/Cpv2XRBYHb.jpg?v=1720821970&width=1780" class="img-fluid rounded" alt="Producto">
+            <div class="text-center mt-3">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <h3 class="fw-bold">Café de la Casa Blend</h3>
+            <h4 class="text-warning fw-bold my-3">Bs 80</h4>
+            <p class="text-muted">250 gr</p>
+            <p>Nuestro Blend de La Casa fue formulado con una mezcla de café un complemento de sabores ideal para espresso y moka italiana.</p>
+            
+            <div class="d-flex align-items-center gap-3 my-4">
+              <button class="btn btn-outline-dark btn-sm rounded-circle" onclick="decrementQty('qty9')">-</button>
+              <input type="number" id="qty9" value="0" class="form-control text-center" style="width: 60px;" readonly>
+              <button class="btn btn-outline-dark btn-sm rounded-circle" onclick="incrementQty('qty9')">+</button>
+            </div>
+            
+            <button class="btn btn-warning w-100 mb-2">Añadir al carrito</button>
+            <button class="btn btn-warning w-100" data-bs-dismiss="modal">Seguir comprando</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 10: Premium Americano -->
+<div class="modal fade" id="modal10" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body p-4">
+        <button type="button" class="btn-close float-end" data-bs-dismiss="modal"></button>
+        <div class="row">
+          <div class="col-md-5">
+            <img src="https://farmacorp.com/cdn/shop/files/07771808000013.jpg?v=1714441043&width=800" class="img-fluid rounded" alt="Producto">
+            <div class="text-center mt-3">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <h3 class="fw-bold">Premium Americano</h3>
+            <h4 class="text-warning fw-bold my-3">Bs 20</h4>
+            <p class="text-muted">250 gr</p>
+            <p>Un café que cautiva con sus notas distintivas de caramelo, chocolate y el exótico matiz de frutas tropicales.</p>
+            
+            <div class="d-flex align-items-center gap-3 my-4">
+              <button class="btn btn-outline-dark btn-sm rounded-circle" onclick="decrementQty('qty10')">-</button>
+              <input type="number" id="qty10" value="0" class="form-control text-center" style="width: 60px;" readonly>
+              <button class="btn btn-outline-dark btn-sm rounded-circle" onclick="incrementQty('qty10')">+</button>
+            </div>
+            
+            <button class="btn btn-warning w-100 mb-2">Añadir al carrito</button>
+            <button class="btn btn-warning w-100" data-bs-dismiss="modal">Seguir comprando</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 11: Kawas - Java -->
+<div class="modal fade" id="modal11" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body p-4">
+        <button type="button" class="btn-close float-end" data-bs-dismiss="modal"></button>
+        <div class="row">
+          <div class="col-md-5">
+            <img src="https://elmundodelcafe.com/cdn/shop/files/KAWAS-JavasPeaberry2.png?v=1739799791" class="img-fluid rounded" alt="Producto">
+            <div class="text-center mt-3">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <h3 class="fw-bold">Kawas - Java</h3>
+            <h4 class="text-warning fw-bold my-3">Bs 80</h4>
+            <p class="text-muted">250 gr</p>
+            <p>Su perfil destaca por delicadas notas herbales de limón, que aportan una frescura cítrica sutil y vivaz.</p>
+            
+            <div class="d-flex align-items-center gap-3 my-4">
+              <button class="btn btn-outline-dark btn-sm rounded-circle" onclick="decrementQty('qty11')">-</button>
+              <input type="number" id="qty11" value="0" class="form-control text-center" style="width: 60px;" readonly>
+              <button class="btn btn-outline-dark btn-sm rounded-circle" onclick="incrementQty('qty11')">+</button>
+            </div>
+            
+            <button class="btn btn-warning w-100 mb-2">Añadir al carrito</button>
+            <button class="btn btn-warning w-100" data-bs-dismiss="modal">Seguir comprando</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 12: Melitta - Altura -->
+<div class="modal fade" id="modal12" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body p-4">
+        <button type="button" class="btn-close float-end" data-bs-dismiss="modal"></button>
+        <div class="row">
+          <div class="col-md-5">
+            <img src="https://i5.walmartimages.cl/asr/fa3cb716-1889-4f59-8560-0287beb64e36.d32efd1ad2b2b90a0695f26fe23962ef.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff" class="img-fluid rounded" alt="Producto">
+            <div class="text-center mt-3">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <h3 class="fw-bold">Melitta - Altura</h3>
+            <h4 class="text-warning fw-bold my-3">Bs 100</h4>
+            <p class="text-muted">250 gr</p>
+            <p>Hemos tomado esta mezcla equilibrada, filtrado suavemente la cafeína y tostado los granos para que pueda disfrutar de un café.</p>
+            
+            <div class="d-flex align-items-center gap-3 my-4">
+              <button class="btn btn-outline-dark btn-sm rounded-circle" onclick="decrementQty('qty12')">-</button>
+              <input type="number" id="qty12" value="0" class="form-control text-center" style="width: 60px;" readonly>
+              <button class="btn btn-outline-dark btn-sm rounded-circle" onclick="incrementQty('qty12')">+</button>
+            </div>
+            
+            <button class="btn btn-warning w-100 mb-2">Añadir al carrito</button>
+            <button class="btn btn-warning w-100" data-bs-dismiss="modal">Seguir comprando</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 13: Café Illimani -->
+<div class="modal fade" id="modal13" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body p-4">
+        <button type="button" class="btn-close float-end" data-bs-dismiss="modal"></button>
+        <div class="row">
+          <div class="col-md-5">
+            <img src="https://m.media-amazon.com/images/I/515sWf5bB7L._AC_UF894,1000_QL80_.jpg" class="img-fluid rounded" alt="Producto">
+            <div class="text-center mt-3">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <h3 class="fw-bold">Café Illimani</h3>
+            <h4 class="text-warning fw-bold my-3">Bs 70</h4>
+            <p class="text-muted">250 gr - 100% arábico</p>
+            <p>De fragancia dulce y terminaciones de panela. Café de especialidad.</p>
+            
+            <div class="d-flex align-items-center gap-3 my-4">
+              <button class="btn btn-outline-dark btn-sm rounded-circle" onclick="decrementQty('qty13')">-</button>
+              <input type="number" id="qty13" value="0" class="form-control text-center" style="width: 60px;" readonly>
+              <button class="btn btn-outline-dark btn-sm rounded-circle" onclick="incrementQty('qty13')">+</button>
+            </div>
+            
+            <button class="btn btn-warning w-100 mb-2">Añadir al carrito</button>
+            <button class="btn btn-warning w-100" data-bs-dismiss="modal">Seguir comprando</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 14: Café Parabola -->
+<div class="modal fade" id="modal14" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body p-4">
+        <button type="button" class="btn-close float-end" data-bs-dismiss="modal"></button>
+        <div class="row">
+          <div class="col-md-5">
+            <img src="https://elmundodelcafe.com/cdn/shop/files/iWl1KCd04j_grande.png?v=1725557934" class="img-fluid rounded" alt="Producto">
+            <div class="text-center mt-3">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <h3 class="fw-bold">Café Parabola</h3>
+            <h4 class="text-warning fw-bold my-3">Bs 40</h4>
+            <p class="text-muted">250 gr</p>
+            <p>Un café exótico, de mediana acidez, frutal, bien balanceado, limpio y uniforme.</p>
+            
+            <div class="d-flex align-items-center gap-3 my-4">
+              <button class="btn btn-outline-dark btn-sm rounded-circle" onclick="decrementQty('qty14')">-</button>
+              <input type="number" id="qty14" value="0" class="form-control text-center" style="width: 60px;" readonly>
+              <button class="btn btn-outline-dark btn-sm rounded-circle" onclick="incrementQty('qty14')">+</button>
+            </div>
+            
+            <button class="btn btn-warning w-100 mb-2">Añadir al carrito</button>
+            <button class="btn btn-warning w-100" data-bs-dismiss="modal">Seguir comprando</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 15: Café Andariego -->
+<div class="modal fade" id="modal15" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body p-4">
+        <button type="button" class="btn-close float-end" data-bs-dismiss="modal"></button>
+        <div class="row">
+          <div class="col-md-5">
+            <img src="https://cafealtura.cl/wp-content/uploads/2024/06/brasi-abaporu.jpg" class="img-fluid rounded" alt="Producto">
+            <div class="text-center mt-3">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <h3 class="fw-bold">Café Andariego</h3>
+            <h4 class="text-warning fw-bold my-3">Bs 145</h4>
+            <p class="text-muted">250 gr</p>
+            <p>En taza, notarás una jugosa nota de durazno combinada con la dulzura delicada del melón, mientras que el caramelo le aporta profundidad y textura.</p>
+            
+            <div class="d-flex align-items-center gap-3 my-4">
+              <button class="btn btn-outline-dark btn-sm rounded-circle" onclick="decrementQty('qty15')">-</button>
+              <input type="number" id="qty15" value="0" class="form-control text-center" style="width: 60px;" readonly>
+              <button class="btn btn-outline-dark btn-sm rounded-circle" onclick="incrementQty('qty15')">+</button>
+            </div>
+            
+            <button class="btn btn-warning w-100 mb-2">Añadir al carrito</button>
+            <button class="btn btn-warning w-100" data-bs-dismiss="modal">Seguir comprando</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-light py-5" style="background-color:#C8A6C3 !important;">
+  <div class="container text-dark">
+    <div class="row align-items-start">
+      <div class="col-md-2 text-center mb-4 mb-md-0">
+         <a href="index.html">
+<img src="https://scontent.fcbb2-2.fna.fbcdn.net/v/t1.15752-9/582054116_1216836660273363_5610784292670256343_n.png?_nc_cat=110&ccb=1-7&_nc_sid=9f807c&_nc_ohc=dBOrPd-s3Q4Q7kNvwEstnjf&_nc_oc=Adn03oyGlWOz9Mo8fbQ4asur63zhpYylrzMoyBftNEyw4h6vvb-I4dShfKLre04PtSU&_nc_zt=23&_nc_ht=scontent.fcbb2-2.fna&oh=03_Q7cD3wFR6bPfWmwThmKJ30N5SmHgFrq9Lh2yUNz5dFx9zThdTA&oe=693B19C4" alt="Logo" class="img-fluid rounded-circle" style="max-width:100px;">
+        </a>
+      </div>
+      <div class="col-md-3 mb-4 mb-md-0">
+        <h6 class="fw-bold text-dark">Contactos</h6>
+        <p class="mb-1 text-dark">+591 78963254</p>
+        <p class="mb-1"><a href="mailto:cafenieblacb@outlook.com" class="text-dark text-decoration-none">cafenieblacb@outlook.com</a></p>
+        <p class="mb-0 text-dark">Zona América Este</p>
+      </div>
+      <div class="col-md-3 mb-4 mb-md-0">
+        <h6 class="fw-bold text-dark">Productos - Categorías</h6>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#" class="text-dark text-decoration-none">Café en sobre</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Café en grano</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Café molido</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 text-center text-md-end">
+        <div class="d-flex justify-content-center justify-content-md-end mb-3">
+          <a href="#" class="btn btn-outline-dark rounded-circle me-2">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="btn btn-outline-dark rounded-circle me-2">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="btn btn-outline-dark rounded-circle">
+            <i class="fab fa-tiktok"></i>
+          </a>
+        </div>
+        <a href="#" class="btn btn-warning rounded-pill px-4">Escríbenos</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
