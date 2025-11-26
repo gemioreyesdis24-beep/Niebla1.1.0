@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión - Niebla Coffee House</title>
+    <link rel="icon" type="image/png" href="5716569.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+     <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header class="fixed-top">
+        <div class="top-header">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+                <div class="col-md-2 text-center mb-4 mb-md-0">
+       <a href="index.html">
+ <img src="https://scontent.fcbb2-2.fna.fbcdn.net/v/t1.15752-9/581114738_1093531689523708_3873710179127169374_n.png?_nc_cat=103&ccb=1-7&_nc_sid=9f807c&_nc_ohc=oAaBK_iMRxEQ7kNvwEk7yRC&_nc_oc=AdnOzbfsFPujAOVmPGwD2NZKfDIppjcw93_8gfJDjEYfuFZskbKFxkYS1qxqqetbQEw&_nc_zt=23&_nc_ht=scontent.fcbb2-2.fna&oh=03_Q7cD3wFGI-wNPZNBPvGVmO9DfmC41kx0A1SLT3mdL3Z0ie82nw&oe=693B0392" alt="Logo" class="img-fluid rounded-circle" style="max-width:100px;">
+                    </a>
+      </div>
+                <div class="header-icons d-flex gap-3">
+                    <a href="tienda.html" class="icon-btn">
+                        <img src="https://scontent.fcbb2-1.fna.fbcdn.net/v/t1.15752-9/588800221_1537377910713460_8027892446377947894_n.png?_nc_cat=100&ccb=1-7&_nc_sid=9f807c&_nc_ohc=QJdt-Drv680Q7kNvwHm1Amb&_nc_oc=AdnRHcJJOOm-7O9OGacpC4ergaBTn8zKgl0uAMQLJBYloDv9XM4uKOlym1kYBYt_hKw&_nc_zt=23&_nc_ht=scontent.fcbb2-1.fna&oh=03_Q7cD3wHX7v-jhLQLPKzyqWfjPlEazt5BAtFShbC-lIuJCK-QBQ&oe=694D6DE0" alt="Carrito" img-fluid rounded-circle style="max-width:40px;">
+                    </a>
+                    
+                  
+                </div>
+            </div>
+        </div>
+        
+    </header>
+
+    <!-- Formulario -->
+    <div class="form-container">
+        <div class="login-box">
+            <h2 class="page-title">Inicio de sesión</h2>
+            
+            <form>
+                <div class="mb-3">
+                    <label class="form-label">Usuario</label>
+                    <input type="text" class="form-control" placeholder="Ingresa tu usuario o correo">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Contraseña</label>
+                    <div class="password-toggle">
+                        <input type="password" id="password" class="form-control" placeholder="Ingresa tu contraseña">
+                        <span class="toggle-icon" onclick="togglePassword()">
+                            <i class="fas fa-eye text-white" id="eyeIcon"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-login">Iniciar sesión</button>
+
+                <div class="divider">
+                    <span>O</span>
+                </div>
+
+                <div class="social-login">
+                    <button type="button" class="btn-social">
+                        <i class="fab fa-google" style="color: #DB4437; font-size: 1.3rem;"></i>
+                    </button>
+                    <button type="button" class="btn-social">
+                        <i class="fab fa-facebook-f" style="color: #4267B2; font-size: 1.3rem;"></i>
+                    </button>
+                    <button type="button" class="btn-social">
+                        <i class="fab fa-apple" style="color: #000; font-size: 1.3rem;"></i>
+                    </button>
+                </div>
+
+                <div class="links">
+                    <a href="#">Crear cuenta</a>
+                    <a href="#">¿Olvidaste tu contraseña?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function togglePassword() {
+            const passwordInput = document.getElementById('password');
+            const eyeIcon = document.getElementById('eyeIcon');
+            
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                eyeIcon.classList.remove('fa-eye');
+                eyeIcon.classList.add('fa-eye-slash');
+            } else {
+                passwordInput.type = 'password';
+                eyeIcon.classList.remove('fa-eye-slash');
+                eyeIcon.classList.add('fa-eye');
+            }
+        }
+    </script>
+</body>
+</html>

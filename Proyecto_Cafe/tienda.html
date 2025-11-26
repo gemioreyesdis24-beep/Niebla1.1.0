@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito - Niebla Coffee House</title>
+    <link rel="icon" type="image/png" href="5716569.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="fixed-top">
+        <div class="top-header">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+                <div class="logo-section d-flex align-items-center gap-3">
+                   <a href="index.html">
+ <img src="https://scontent.fcbb2-2.fna.fbcdn.net/v/t1.15752-9/581114738_1093531689523708_3873710179127169374_n.png?_nc_cat=103&ccb=1-7&_nc_sid=9f807c&_nc_ohc=oAaBK_iMRxEQ7kNvwEk7yRC&_nc_oc=AdnOzbfsFPujAOVmPGwD2NZKfDIppjcw93_8gfJDjEYfuFZskbKFxkYS1qxqqetbQEw&_nc_zt=23&_nc_ht=scontent.fcbb2-2.fna&oh=03_Q7cD3wFGI-wNPZNBPvGVmO9DfmC41kx0A1SLT3mdL3Z0ie82nw&oe=693B0392" alt="Logo" class="img-fluid rounded-circle" style="max-width:100px;">
+                    </a>
+                </div>
+                <div class="header-icons d-flex gap-3">
+                 <a href="tienda.html" class="icon-btn">
+                        <img src="https://scontent.fcbb2-1.fna.fbcdn.net/v/t1.15752-9/588800221_1537377910713460_8027892446377947894_n.png?_nc_cat=100&ccb=1-7&_nc_sid=9f807c&_nc_ohc=QJdt-Drv680Q7kNvwHm1Amb&_nc_oc=AdnRHcJJOOm-7O9OGacpC4ergaBTn8zKgl0uAMQLJBYloDv9XM4uKOlym1kYBYt_hKw&_nc_zt=23&_nc_ht=scontent.fcbb2-1.fna&oh=03_Q7cD3wHX7v-jhLQLPKzyqWfjPlEazt5BAtFShbC-lIuJCK-QBQ&oe=694D6DE0" alt="Carrito" img-fluid rounded-circle style="max-width:40px;">
+                    </a>
+                    <a href="login.html" class="icon-btn">
+                        <img src="https://scontent.fcbb2-2.fna.fbcdn.net/v/t1.15752-9/588328192_831303379601201_68882733088763774_n.png?_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_ohc=4-NRWrQnQoMQ7kNvwFmaHXG&_nc_oc=Adk8bYHoTXLt9oNMDGc1KlayIYiWukXVGDardExeKemr-djQO1YMbdLgBTlnjassXJk&_nc_zt=23&_nc_ht=scontent.fcbb2-2.fna&oh=03_Q7cD3wE7CkAw-XtsdLG2elc8bP5xU-sADZH4IRM3ZjwCRoNHzA&oe=694D4F64" alt="Carrito" img-fluid rounded-circle style="max-width:40px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg main-nav">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav justify-content-center">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="recetas.html">Recetas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="academias.html">Academias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="accesorios.html">Accesorios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="souvenirs.html">Souvenirs</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="tienda.html">Tienda</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main style="margin-top: 180px;" class="container my-5">
+        <h1 class="text-center mb-5">Tu Carrito de Compras</h1>
+        <h2>Productos</h2>
+        <br>
+        <div class="row">
+            <!-- Productos en el carrito -->
+            <div class="col-lg-8 mb-4">
+                <div class="card1">
+                    <div class="card-body">
+                        <!-- Item 1 -->
+                        <div class="cart-item-bs d-flex align-items-center border-bottom pb-3 mb-3">
+                            <button class="btn btn-danger btn-sm me-3 remove-btn">✕</button>
+                           <img src="https://cafemandrake.cl/cdn/shop/files/IMG-8302_bf2fb2cf-42de-4bbf-9b02-1674e1c30385.jpg?crop=center&height=1200&v=1728838877&width=1200" alt="Cafetería" class="carrito">
+                            <div class="flex-grow-1">
+                                <h5 class="mb-1">Café en bolsitas</h5>
+                                <p class="text-muted small mb-0">Contiene 15 saquitos de café.</p>
+                            </div>
+                            <div class="d-flex align-items-center me-3">
+                                <button class="btn btn-sm btn-outline-secondary qty-minus">-</button>
+                                <input type="number" class="form-control form-control-sm mx-2 text-center qty-input" value="1" min="1" style="width: 60px;" readonly>
+                                <button class="btn btn-sm btn-outline-secondary qty-plus">+</button>
+                            </div>
+                            <div class="text-end" style="min-width: 80px;">
+                                <strong class="item-price" data-base-price="20"></strong>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                         <div class="cart-item-bs d-flex align-items-center border-bottom pb-3 mb-3">
+                            <button class="btn btn-danger btn-sm me-3 remove-btn">✕</button>
+                           <img src="https://latiendadelcafe.co/cdn/shop/products/peligro-tag_1.png?v=1750437463&width=2048" alt="Cafetería" class="carrito">
+                            <div class="flex-grow-1">
+                                <h5 class="mb-1">Camiseta Peligro</h5>
+                                <p class="text-muted small mb-0">Con ella podras conectar tu look.</p>
+                            </div>
+                            <div class="d-flex align-items-center me-3">
+                                <button class="btn btn-sm btn-outline-secondary qty-minus">-</button>
+                                <input type="number" class="form-control form-control-sm mx-2 text-center qty-input" value="1" min="1" style="width: 60px;" readonly>
+                                <button class="btn btn-sm btn-outline-secondary qty-plus">+</button>
+                            </div>
+                            <div class="text-end" style="min-width: 80px;">
+                                <strong class="item-price" data-base-price="150">Bs150</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resumen de compra -->
+            <div class="col-lg-4">
+                <div class="card2 sticky-top" style="top: 200px;">
+                    <div class="card-body">
+                        <h4 class="mb-4">Resumen de Compra</h4>
+                        
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Subtotal:</span>
+                            <span id="subtotal">$53.97</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Envío:</span>
+                            <span id="shipping">$5.00</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3">
+                            <span>Descuento:</span>
+                            <span class="text-success" id="discount">-$0.00</span>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between mb-4">
+                            <strong>Total:</strong>
+                            <strong class="text-primary fs-5" id="total">$58.97</strong>
+                        </div>
+                        <div>
+                        <a href="registro.html" class="btn btn-warning">Finalizar Compra</a>
+                        <a href="productos.html" class="btn btn-warning">Continuar Comprando</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Productos Recomendados -->
+        <section class="mt-5">
+            <h2 class="text-center mb-4">Productos en oferta</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="product-card4">
+                        <img src="https://koladocaffe.com/wp-content/uploads/2020/12/20210223_145207-600x600.jpg" alt="Cafetería" class="carrito2">
+                        <h3 class="product-title">Café en bolsitas premium </h3>
+                        <p class="product-description">Café de Especialidad sin la necesidad de cafetera, filtro o molinillo. Lo puedes llevar a cualquier parte! Solo necesitas água caliente.   
+                    Contiene 120 saquitos de café </p>
+                        <div class="product-price">Bs 130</div>
+                        <button class="btn btn-add-cart w-100">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product-card4">
+                        <img src="https://amarket.com.bo/cdn/shop/files/07771808000013_1200x1200.jpg?v=1712345059" alt="Cafetería" class="carrito2">
+                        <h3 class="product-title">Premium Americano </h3>
+                        <p class="product-description"> Un café que cautiva con sus notas distintivas de caramelo, chocolate y el exótico matiz de frutas tropicales.</p>
+                        <div class="product-price">Bs 30</div>
+                        <button class="btn btn-add-cart w-100">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product-card4">
+                        <img src="https://elmundodelcafe.com/cdn/shop/files/EMDC-Polerones-18_copy.jpg?v=1724251666&width=1780" alt="Cafetería" class="carrito2">
+                        <h3 class="product-title">Polerón Beige </h3>
+                        <p class="product-description">SConfeccionado con un tejido de alta calidad compuesto por 60% algodón y 40% poliéster, te ofrece la suavidad y durabilidad que buscas en una prenda de vestir.</p>
+                        <div class="product-price">Bs 150</div>
+                        <button class="btn btn-add-cart w-100">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+           <!-- Souvenirs -->
+            <section class="mb-5">
+                <br>
+                <h2>Café Boliviano</h2>
+                <div class="row g-6 ">
+                    <div class="col-md-6">
+                        <div class="niebla-card">
+                           <img src="https://www.noticiasfides.com/images/news/2025/09/u-planta-de-cafe-foto-coprofam_1759178668.jpg" alt="Cafetería" class="image-cafe">
+                            <div class="souvenir-info">
+                                
+                                  <br>
+                                <h5>Cultivamos y cosechamos cada grano de café con amor y dedicación.
+                              </h5>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                   
+                </div>
+                <br>
+                <div class="row g-6 ">
+                    <div class="col-md-6">
+                        <div class="niebla-card">
+                            <div class="souvenir-info">
+                                
+                                  <br>
+                                <h5>Cada grano nace en fincas ubicadas en Samaipata y Caranavi, donde se cultivan más de 60 variedades adaptadas a microclimas únicos. 
+                                    Recolectamos a mano, procesamos con métodos cuidadosos y tostamos por perfil para resaltar la personalidad de cada lote. </h5>
+                             
+                              
+                                
+                            </div>
+                           <img src="https://sdsnbolivia.org/wp-content/uploads/2023/12/Torneo-de-cafe-de-exelencia-6-1.jpg" alt="Cafetería" class="image-cafe">
+                            
+                        </div>
+                    </div>
+                   
+                </div>
+            </section>
+            
+    </main>
+
+        <!-- Footer -->
+<footer class="bg-light py-5" style="background-color:#C8A6C3 !important;">
+  <div class="container text-dark">
+    <div class="row align-items-start">
+      <!-- Logo -->
+      <div class="col-md-2 text-center mb-4 mb-md-0">
+         <a href="index.html">
+<img src="https://scontent.fcbb2-2.fna.fbcdn.net/v/t1.15752-9/582054116_1216836660273363_5610784292670256343_n.png?_nc_cat=110&ccb=1-7&_nc_sid=9f807c&_nc_ohc=dBOrPd-s3Q4Q7kNvwEstnjf&_nc_oc=Adn03oyGlWOz9Mo8fbQ4asur63zhpYylrzMoyBftNEyw4h6vvb-I4dShfKLre04PtSU&_nc_zt=23&_nc_ht=scontent.fcbb2-2.fna&oh=03_Q7cD3wFR6bPfWmwThmKJ30N5SmHgFrq9Lh2yUNz5dFx9zThdTA&oe=693B19C4" alt="Logo" class="img-fluid rounded-circle" style="max-width:100px;">
+        </a>
+      </div>
+
+      <!-- Contactos -->
+      <div class="col-md-3 mb-4 mb-md-0">
+        <h6 class="fw-bold text-dark">Contactos</h6>
+        <p class="mb-1 text-dark">+591 78963254</p>
+        <p class="mb-1"><a href="mailto:cafenieblacb@outlook.com" class="text-dark text-decoration-none">cafenieblacb@outlook.com</a></p>
+        <p class="mb-0 text-dark">Zona América Este</p>
+      </div>
+
+      <!-- Productos -->
+      <div class="col-md-3 mb-4 mb-md-0">
+        <h6 class="fw-bold text-dark">Productos - Categorías</h6>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#" class="text-dark text-decoration-none">Café en sobre</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Café en grano</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Café molido</a></li>
+        </ul>
+      </div>
+
+      <!-- Redes sociales -->
+      <div class="col-md-4 text-center text-md-end">
+        <div class="d-flex justify-content-center justify-content-md-end mb-3">
+          <a href="#" class="btn btn-outline-dark rounded-circle me-2">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="btn btn-outline-dark rounded-circle me-2">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="btn btn-outline-dark rounded-circle">
+            <i class="fab fa-tiktok"></i>
+          </a>
+        </div>
+        <a href="#" class="btn btn-warning rounded-pill px-4">Escríbenos</a>
+      </div>
+    </div>
+  </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
